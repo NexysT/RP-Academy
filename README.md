@@ -1,36 +1,185 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
 
-## Getting Started
+# 🎭 RP ACADEMY
+### Plataforma Premium de Formação Roleplay
 
-First, run the development server:
+<br>
+
+<img src="https://readme-typing-svg.demolab.com?font=Inter&size=22&pause=1200&color=5DA3FA&center=true&vCenter=true&width=700&lines=Plataforma+Educacional+para+Servidores+RP;Sistema+de+Formacao+de+Staff;Quiz+Interativo+de+Roleplay;Corporacoes+e+Procedimentos+RP;Next.js+%7C+TypeScript+%7C+TailwindCSS" />
+
+<br><br>
+
+![Next JS](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-black?style=for-the-badge&logo=framer&logoColor=blue)
+![Roleplay](https://img.shields.io/badge/Roleplay-Learning-purple?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-In_Development-success?style=for-the-badge)
+
+</div>
+
+---
+
+# 🎯 Objetivo do Projeto
+
+O **RP Academy** é uma plataforma desenvolvida para auxiliar comunidades e servidores de **Roleplay** através de um sistema moderno de aprendizagem, formação e avaliação.
+
+O projeto procura elevar a qualidade do RP através de:
+- Ensino estruturado de regras RP
+- Formação de corporações
+- Simulações e avaliações
+- Testes para staff
+- Experiência moderna e profissional
+
+O foco principal é criar uma plataforma que pareça um produto comercial real e não apenas um website básico de quizzes.
+
+---
+
+# 🧠 Funcionalidades Principais
+
+## 📚 Sistema Roleplay
+✔ Explicação completa de regras RP  
+✔ Sidebar lateral interativa  
+✔ Sistema estilo W3Schools  
+✔ Feedback imediato de respostas  
+✔ Barra de progresso  
+✔ Questões dinâmicas  
+
+---
+
+## 🛡 Sistema STAFF
+
+### Teste
+✔ Correção instantânea  
+✔ Explicações após resposta  
+✔ Questões aleatórias  
+✔ Sistema interativo  
+
+### Exame
+✔ Resultado apenas no final  
+✔ Questões avançadas  
+✔ Sistema de pontuação  
+✔ Mistura RP + STAFF  
+
+---
+
+## 🚓 Corporações
+- Polícia
+- INEM
+- Militar
+- Polícia Militar
+- GNR
+- PSP
+- Estrangeiro
+
+Cada secção contém:
+- Hierarquias
+- Procedimentos
+- Guias RP
+- Situações práticas
+- Códigos rádio
+
+---
+
+# 🎨 Filosofia de Design
+
+O website deve transmitir:
+- Profissionalismo
+- Modernidade
+- Clareza
+- Fluidez
+- Performance
+
+### Inspirações Visuais
+- Linear
+- Vercel
+- Stripe
+- Notion
+- Framer
+
+### Objetivos UX/UI
+✔ Dark Mode premium  
+✔ Micro animações suaves  
+✔ Layout responsivo  
+✔ Navegação fluida  
+✔ Glassmorphism subtil  
+✔ Componentização moderna  
+
+---
+
+# ⚙ Stack Tecnológica
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- Next.js
+- TypeScript
+- TailwindCSS
+- Framer Motion
+- Local Storage
+- Modular Architecture
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# 🗂 Estrutura do Projeto
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+src/
+├── app/
+│   ├── corporacoes/
+│   ├── roleplay/
+│   ├── staff/
+│   └── dashboard/
+│
+├── components/
+│   ├── ui/
+│   ├── quiz/
+│   ├── sidebar/
+│   └── animations/
+│
+├── data/
+├── hooks/
+├── lib/
+├── services/
+├── styles/
+└── utils/
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+# 🚀 Objetivos Técnicos
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+✔ Código limpo e organizado  
+✔ Arquitetura escalável  
+✔ Componentes reutilizáveis  
+✔ Alta performance  
+✔ SEO otimizado  
+✔ UX moderna  
+✔ Responsividade total  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+# 📈 Roadmap
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [ ] Sistema completo de quizzes
+- [ ] Dashboard de progresso
+- [ ] Sistema de níveis
+- [ ] Estatísticas avançadas
+- [ ] Guardar progresso local
+- [ ] Sistema de autenticação
+- [ ] Painel administrativo
+- [ ] API para servidores RP
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+# 🤖 Nota
+
+Algumas partes do projeto foram desenvolvidas com apoio de inteligência artificial para acelerar prototipagem, organização e produtividade.
+
+---
+
+# 🚧 Estado do Projeto
+
+Atualmente em desenvolvimento ativo.
+```
+Nexys.Tuga || A reutilização é permitida, mas agradece-se que criadores e developers mantenham os devidos créditos, contribuindo para uma comunidade mais justa e colaborativa. || 2026
+```
