@@ -1,11 +1,18 @@
 <div align="center">
 
 # 🎭 RP ACADEMY
-### Plataforma Premium de Formação Roleplay
-
 <br>
 
-<img src="https://readme-typing-svg.demolab.com?font=Inter&size=22&pause=1200&color=5DA3FA&center=true&vCenter=true&width=700&lines=Plataforma+Educacional+para+Servidores+RP;Sistema+de+Formacao+de+Staff;Quiz+Interativo+de+Roleplay;Corporacoes+e+Procedimentos+RP;Next.js+%7C+TypeScript+%7C+TailwindCSS" />
+<div align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Inter&size=22&pause=1200&color=5DA3FA&center=true&vCenter=true&width=700&lines=Plataforma+Educacional+para+Servidores+RP;Sistema+de+Formacao+de+Staff;Quiz+Interativo+de+Roleplay;Corporacoes+e+Procedimentos+RP;Next.js+%7C+TypeScript+%7C+TailwindCSS" />
+
+  <br/>
+  <br>
+  <br>
+
+  [![Deploy](https://img.shields.io/badge/🌐%20Ver%20Site-rp--academy.vercel.app-5DA3FA?style=for-the-badge&logoColor=white)](https://rp-academy.vercel.app)
+
+</div>
 
 <br><br>
 
