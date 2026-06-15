@@ -41,650 +41,648 @@ export interface HierarquiaEntry {
 export const corporacoes: CorpData[] = [
   {
     id: 'psp',
-  name: 'Polícia de Segurança Pública',
-  shortName: 'PSP',
-  description: 'Força de segurança uniformizada e armada, de natureza pública e dotada de autonomia administrativa. Missão: assegurar a legalidade democrática, garantir a segurança interna e proteger os direitos dos cidadãos (Lei n.º 53/2007, 31/08).',
-  color: '#1d4ed8',
-  accentColor: '#3b82f6',
-  icon: '🛡️',
-
-  sections: {
-    guias: [
-      {
-        title: 'Missão, Visão e Valores Institucionais',
-        shortDesc: 'Fundamentos legais e estratégicos da PSP — o que é, para que serve e como atua.',
-        content: `Missão (Lei n.º 53/2007): Assegurar a legalidade democrática, garantir a segurança interna e proteger os direitos dos cidadãos.
-
-Visão (Estratégia PSP 2025-2027): "PRESENTE PELA PROXIMIDADE, PRÓXIMA NA SEGURANÇA!"
-
-Orientações Estratégicas:
-• Excelência Operacional
-• Credibilidade Institucional
-• Reconhecimento Organizacional
-
-Princípios de Atuação:
-• Integridade e Disciplina
-• Defesa da Legalidade
-• Respeito pelos Direitos, Liberdades e Garantias
-• Proximidade e Humanismo
-• Serviço Público de Qualidade
-
-Modelo Concetual de Atuação (5 elementos-chave):
-Proximidade → Dissuasão → Prevenção → Deteção → Resposta → Adaptação
-
-Eixos Estratégicos 2025-2027:
-EE1 — Sentimento de segurança dos cidadãos
-EE2 — Formação inicial, contínua e de especialização
-EE3 — Valorização socioprofissional do capital humano
-EE4 — Coesão interna
-EE5 — Inovação e desenvolvimento
-EE6 — Comunicação, imagem institucional e cooperação internacional`,
-        tags: ['Missão', 'Visão', 'Lei 53/2007', 'Estratégia 2025'],
-      },
-      {
-        title: 'Estrutura Geral da PSP',
-        shortDesc: 'Organização territorial e unidades que compõem a PSP a nível nacional.',
-        content: `A PSP compreende a Direção Nacional, as unidades de polícia e os estabelecimentos de ensino policial.
-
-UNIDADES DE POLÍCIA:
-
-1. Unidade Especial de Polícia (UEP)
-   • CI — Corpo de Intervenção
-   • GOE — Grupo de Operações Especiais
-   • CSP — Corpo de Segurança Pessoal
-   • CIEXSS — Centro de Inativação de Explosivos e Segurança em Subsolo
-   • GOC — Grupo Operacional Cinotécnico
-
-2. Comandos Metropolitanos
-   • COMETLIS — Comando Metropolitano de Lisboa
-   • Comando Metropolitano do Porto
-
-3. Comandos Regionais
-   • Comando Regional dos Açores
-   • Comando Regional da Madeira
-
-4. Comandos Distritais (16)
-   Aveiro | Beja | Braga | Bragança | Castelo Branco | Coimbra
-   Évora | Faro | Guarda | Leiria | Portalegre | Santarém
-   Setúbal | Viana do Castelo | Vila Real | Viseu
-
-ESTABELECIMENTOS DE ENSINO POLICIAL:
-• ISCPSI — Instituto Superior de Ciências Policiais e Segurança Interna
-  (forma Oficiais PSP; ensino superior universitário)
-• EPP — Escola Prática de Polícia
-  (formação de Agentes e Chefes; Torres Novas)
-
-EFETIVO 2025: ~20.559 elementos com funções policiais + 1.011 pessoal civil = 21.570 total`,
-        tags: ['Estrutura', 'Territorial', 'UEP', 'ISCPSI', 'EPP'],
-      },
-      {
-        title: 'Direção Nacional — Estrutura Interna',
-        shortDesc: 'Composição da Direção Nacional e as quatro unidades orgânicas.',
-        content: `A Direção Nacional da PSP (DN/PSP) compreende:
-
-TOPO:
-• Diretor Nacional (Superintendente-Chefe — Luís Miguel Ribeiro Carrilho, desde 2024)
-• Diretores Nacionais Adjuntos (4)
-• Inspetor Nacional
-
-ÓRGÃOS DE CONSULTA E DISCIPLINA:
-• Conselho Superior de Polícia
-• Conselho de Deontologia e Disciplina
-• Junta Superior de Saúde
-• Inspeção Nacional
-
-GABINETES DO DN:
-• Gabinete do Diretor Nacional
-• Gabinete de Estudos e Planeamento (GEP)
-• Gabinete de Assuntos Jurídicos (GAJ)
-• Gabinete de Imprensa e Relações Públicas (GIRP)
-• Gabinete de Deontologia e Disciplina (GDD)
-• Centro de Assistência Religiosa
-• Departamento de Apoio Geral (DAG)
-
-QUATRO UNIDADES ORGÂNICAS:
-• DNA UOOS — Unidade Orgânica de Operações e Segurança
-  (Dep. Operações, Dep. Informações, Dep. Investigação Criminal,
-   Dep. Armas e Explosivos, Dep. Segurança Privada, Dep. Sistemas Informação)
-
-• DNA UOSACF — Unidade Orgânica de Segurança Aeroportuária e Controlo Fronteiriço
-  (Dep. Segurança Aeroportuária, Dep. Gestão Integrada de Fronteiras)
-
-• DNA UORH — Unidade Orgânica de Recursos Humanos
-  (Dep. Recursos Humanos, Dep. Formação, Dep. Saúde e Assistência na Doença)
-
-• DNA UOLF — Unidade Orgânica de Logística e Finanças
-  (Dep. Logística, Dep. Infraestruturas, Dep. Gestão Financeira,
-   Gabinete Planeamento Controlo Logístico e Financeiro)`,
-        tags: ['DN/PSP', 'Direção Nacional', 'UOOS', 'UORH', 'Estrutura Interna'],
-      },
-      {
-        title: 'Comunicações Rádio — Protocolo e Fonético',
-        shortDesc: 'Procedimentos de comunicação rádio e alfabeto fonético NATO em uso na PSP.',
-        content: `REGRAS BASE DE COMUNICAÇÃO:
-• Sempre identificar a unidade antes de transmitir: "Alfa 1 para Central"
-• Dar localização (10-20) antes de reportar qualquer ocorrência
-• Em perseguições: atualizar direção e matrícula de 30 em 30 segundos
-• Nunca bloquear o canal com conversas desnecessárias
-• Confirmação de receção sempre com 10-4
-• Em emergência: 10-33 tem prioridade absoluta — todas as outras comunicações cedem
-
-ALFABETO FONÉTICO NATO (padrão operacional):
-A=Alfa  B=Bravo  C=Charlie  D=Delta  E=Echo  F=Foxtrot
-G=Golf  H=Hotel  I=India  J=Juliett  K=Kilo  L=Lima
-M=Mike  N=November  O=Oscar  P=Papa  Q=Quebec  R=Romeo
-S=Sierra  T=Tango  U=Uniform  V=Victor  W=Whiskey
-X=X-Ray  Y=Yankee  Z=Zulu
-
-NÚMEROS NATO:
-1=Wun | 2=Too | 3=Tree | 4=Fow-er | 5=Fife
-6=Six | 7=Seven | 8=Ait | 9=Nin-er | 0=Ze-ro
-
-EXEMPLOS DE USO:
-• Matrícula "AA-12-BB" → "Alfa-Alfa, Wun-Too, Bravo-Bravo"
-• Canal seguro: "Muda para Sierra-Sierra" (canal seguro)
-• Identificar patrulha: "Alfa 1" (1ª patrulha do turno A)`,
-        tags: ['Rádio', 'NATO', 'Fonético', 'Comunicações'],
-      },
-      {
-        title: 'Programas Especiais de Policiamento',
-        shortDesc: 'Programas de proximidade da PSP dirigidos a grupos específicos da comunidade.',
-        content: `A PSP desenvolve programas de policiamento de proximidade (MIPP — Modelo Integrado de Policiamento de Proximidade):
-
-• Escola Segura — Segurança em ambiente escolar
-• Apoio 65 — Idosos em Segurança — proteção de idosos
-• Violência Doméstica — apoio a vítimas e prevenção
-• Comércio Seguro — segurança em estabelecimentos comerciais
-• Significativo Azul — apoio a pessoas com perturbações do espectro autista
-• Táxi Seguro — segurança de taxistas e passageiros
-• Abastecimento Seguro — segurança em postos de combustível
-• Farmácia Segura — segurança em farmácias
-• Estou Aqui — apoio a pessoas com Alzheimer ou demência
-
-POLICIAMENTO DE GRANDE EVENTOS:
-• Espetáculos desportivos (fiscalização DSP — 18 ações/ano)
-• Eventos de espetáculo (40 ações/ano)
-• Policiamento sazonal: Carnaval, Páscoa, Natal, Verão
-
-EM ROLEPLAY: estes programas são excelentes para criar RP de proximidade. Um agente PSP que interage com idosos (Apoio 65) ou em escolas (Escola Segura) cria narrativas muito mais ricas do que simples patrulhas reativas.`,
-        tags: ['MIPP', 'Proximidade', 'Escola Segura', 'Comunidade'],
-      },
-    ],
-
-    procedimentos: [
-      {
-        title: 'Uso de Arma de Fogo — Protocolo Legal (RUAF)',
-        shortDesc: 'Quando e como pode um agente PSP usar a arma de fogo — enquadramento legal.',
-        content: `O uso de arma de fogo é regulado por lei e sujeito a RUAF (Relatório de Uso de Arma de Fogo), obrigatório em qualquer situação onde a arma seja desembainhada ou disparada.
-
-PRINCÍPIOS LEGAIS (Lei de Segurança Interna + DL 457/99):
-• Necessidade: só quando imprescindível para proteger vida (própria ou alheia)
-• Proporcionalidade: força não superior ao estritamente necessário
-• Adequação: resposta adequada ao tipo de ameaça
-
-ESCALADA DE FORÇA (progressiva e obrigatória):
-Nível 1 — Presença + Comandos verbais
-Nível 2 — Controlo físico (imobilização)
-Nível 3 — Força não-letal (spray OC, bastão, taser)
-Nível 4 — Arma de fogo (último recurso, ameaça letal iminente)
-
-QUANDO É PERMITIDO DESEMBAINHAR (sem disparar):
-• Suspeita fundamentada de porte de arma
-• Detenção de suspeito de crime violento
-• Situações de risco elevado avaliadas pelo agente
-
-APÓS QUALQUER UTILIZAÇÃO:
-• Comunicar imediatamente ao superior hierárquico
-• Preencher RUAF (Relatório de Uso de Arma de Fogo)
-• Preservar cena para investigação
-• Solicitar INEM se houver feridos
-
-EM ROLEPLAY: nunca saltar níveis de força sem justificação narrativa sólida. Isso é Fail RP e viola protocolos reais da PSP.`,
-        tags: ['Arma de Fogo', 'RUAF', 'Força', 'Legal'],
-      },
-      {
-        title: 'Abordagem a Veículo — Paragem e Fiscalização',
-        shortDesc: 'Protocolo completo para imobilizar e abordar veículos suspeitos.',
-        content: `FASE 1 — COMUNICAÇÃO PRÉVIA:
-• Comunicar ao rádio: matrícula, marca, cor, direção e motivo antes de imobilizar
-• Pedir verificação no sistema (10-29): mandatos, veículos furtados, antecedentes
-• Solicitar apoio se suspeita de perigo elevado
-
-FASE 2 — IMOBILIZAÇÃO:
-• Sinalética luminosa e sonora ativada (exceto operação discreta — 10-40)
-• Posicionar a viatura policial em ângulo de 45° atrás-direita do veículo suspeito
-• Nunca parar diretamente atrás — ângulo protege de tiro e melhora visibilidade
-
-FASE 3 — ABORDAGEM:
-• Agente 1 (principal): aproxima pelo lado do condutor, mantém posição de proteção
-• Agente 2 (apoio): cobre lado do passageiro, observa interior e ambiente
-• Identificação clara: "PSP — documentos do veículo e identificação, por favor"
-• Nunca deixar condutor ou passageiro colocar mãos em zonas não visíveis
-
-FASE 4 — VERIFICAÇÃO:
-• Carta de condução, documento de identificação, registo do veículo, seguro obrigatório
-• Verificar validade da inspeção periódica
-• Registar no MDT (Mobile Data Terminal) a abordagem
-
-FASE 5 — ENCERRAMENTO:
-• Se tudo em ordem: devolver documentos, registar 10-24
-• Se infração: comunicar ao condutor claramente, emitir auto de contraordenação
-• Se detenção: protocolo de detenção (ver procedimento específico)`,
-        tags: ['Veículo', 'Fiscalização', 'Abordagem', 'MDT'],
-      },
-      {
-        title: 'Detenção — Procedimento Completo',
-        shortDesc: 'Como efetuar uma detenção legal e correctamente documentada em RP.',
-        content: `BASE LEGAL: Art. 254-261 CPP (Código de Processo Penal)
-A detenção só é válida em flagrante delito ou com mandado judicial.
-
-PRÉ-DETENÇÃO:
-• Avaliar risco — solicitar reforços se necessário
-• Comunicar ao rádio intenção: "Alfa 1 para Central, vou proceder a detenção em [local]"
-• Verificar se há outros suspeitos no perímetro
-
-EXECUÇÃO:
-1. "PSP — Polícia! Não se mexa! Mãos onde eu as possa ver!"
-2. Imobilização física — sempre com o mínimo de força necessária
-3. Algemas — pelas costas em situação de risco; pela frente se cooperativo
-4. Busca de segurança imediata — verificar armas e objetos perigosos
-5. Informar dos direitos: "Está detido. Tem direito a advogado e a não se auto-incriminar."
-6. Comunicar ao rádio: "10-15, um detido, [local], [motivo]"
-
-PÓS-DETENÇÃO:
-• Transportar para Esquadra
-• Registo completo no MDT: identidade, crime, circunstâncias, hora, local, agentes presentes
-• Busca formal (com agente do mesmo sexo)
-• Direito a chamada telefónica
-• Registo de objetos apreendidos (cadeia de custódia)
-• Interrogatório pelo Oficial de Serviço
-
-TEMPO MÁXIMO DE DETENÇÃO sem apresentação ao MP: 48 horas (art. 254 CPP)
-
-EM RP: cada passo anunciado em voz alta cria cena — o detido tem direito a reação (Pain RP, diálogo, negação). Não fazer a detenção mecânica.`,
-        tags: ['Detenção', 'CPP', 'Algemas', 'MDT', 'Direitos'],
-      },
-      {
-        title: 'Fiscalização Rodoviária — Protocolo e Poderes',
-        shortDesc: 'Competências da PSP em fiscalização rodoviária e procedimentos de controlo.',
-        content: `A PSP tem competência primária de fiscalização rodoviária nas zonas urbanas. Em estradas nacionais fora de zonas urbanas, a competência é da GNR.
-
-POSTO DE FISCALIZAÇÃO:
-• Sinalização prévia mínima 150m antes do posto
-• Agentes com colete refletor obrigatório
-• Sinal de paragem: braço estendido horizontalmente ou lanterna intermitente
-• Paragem obrigatória à ordem da PSP — recusa é crime
-
-DOCUMENTOS A VERIFICAR:
-• Carta de Condução (ou equivalente estrangeiro)
-• Documento de Identificação (BI/CC/Passaporte)
-• Documento do Veículo (Certificado de Matrícula)
-• Seguro Obrigatório Automóvel (validade)
-• Inspeção Periódica Obrigatória (IUC válido confirma IPO)
-
-TESTES E CONTROLOS:
-• Álcool: taxa legal máxima 0,5 g/L (0,2 g/L para novos condutores e profissionais)
-• Recusa de teste de álcool: crime de desobediência + detenção
-• Velocidade: via radares (Multanova, Vitronic, Laser Cam4 — total 128 unidades PSP)
-• Pesos e dimensões: balanças rodoviárias
-
-INFRAÇÕES MAIS COMUNS EM RP:
-• Excesso de velocidade (10-55 se suspeita de álcool)
-• Falta de documentação
-• Telemóvel ao volante
-• Não uso de cinto
-
-CONTRA-ORDENAÇÕES vs CRIMES:
-• CO: coima, possível inibição de conduzir (ex: excesso de velocidade)
-• Crime: detenção possível (ex: condução sem habilitação, álcool acima de 1,2 g/L)`,
-        tags: ['Rodoviária', 'Álcool', 'Radar', 'Fiscalização'],
-      },
-      {
-        title: 'Investigação Criminal — Competências PSP',
-        shortDesc: 'Âmbito de investigação criminal da PSP e articulação com o Ministério Público.',
-        content: `A PSP tem órgão de polícia criminal (OPC) próprio — o DIC (Departamento de Investigação Criminal).
-
-COMPETÊNCIAS DE INVESTIGAÇÃO DA PSP:
-• Crimes contra pessoas: ofensas corporais, ameaças, sequestro
-• Crimes contra propriedade: furto, roubo, dano
-• Violência doméstica (programa específico)
-• Crimes informáticos (SIC — Sistema de Informação Criminal)
-• Crimes no âmbito de espetáculos desportivos (DIP + GOC)
-• Segurança Privada: crimes relacionados com armas e explosivos (DAE)
-
-ARTICULAÇÃO COM MP (Ministério Público):
-• PSP age como OPC sob direção do MP em processo penal
-• Auto de Notícia → Inquérito (MP dirige) → PSP executa diligências delegadas
-• Detenção em flagrante → apresentar ao MP em 48h
-
-TÉCNICAS DE INVESTIGAÇÃO:
-• Recolha de prova no local (preservar cena, fotografar, recolher impressões)
-• Audição de testemunhas e suspeitos (auto de declarações)
-• Pesquisa Encoberta de Informações (agentes especializados)
-• Análise de informações criminais (DIC)
-• Cooperação com EUROPOL, INTERPOL (via DSIC/DIC)
-
-POLÍCIA TÉCNICA FORENSE (reorganização em curso 2025):
-• Recolha de ADN, impressões digitais, traços balísticos
-• Análise laboratorial em coordenação com laboratórios forenses
-
-EM RP: uma investigação bem conduzida pode durar várias sessões. Recolher provas, ouvir testemunhas, elaborar autos — isso é RP rico e realista.`,
-        tags: ['Investigação', 'DIC', 'MP', 'OPC', 'Forense'],
-      },
-    ],
-
-    codigos: [
-      // --- CÓDIGOS 10 REAIS PSP ---
-      { code: '10-0', description: 'Cuidado / Atenção redobrada na transmissão', severity: 'medio' as const,
-        detail: 'Alerta genérico para atenção. Usado quando há informação sensível ou situação que requer cuidado. Não é emergência, mas exige atenção.' },
-      { code: '10-1', description: 'Fraca receção — pedir repetição ou reposicionamento', severity: 'baixo' as const,
-        detail: 'Sinal fraco, mensagem não percebida. Pedir ao transmissor que repita ou mude de posição.' },
-      { code: '10-2', description: 'Boa receção de sinal', severity: 'baixo' as const,
-        detail: 'Confirmação de que o sinal está a ser recebido claramente.' },
-      { code: '10-3', description: 'Parar transmissão / Silêncio no canal', severity: 'medio' as const,
-        detail: 'Ordenar silêncio imediato no canal. Usado quando há situação prioritária a tratar.' },
-      { code: '10-4', description: 'Recebido / OK / Confirmado', severity: 'baixo' as const,
-        detail: 'Código universal de confirmação. A mensagem foi recebida e compreendida. Equivale a "Roger" em terminologia militar.' },
-      { code: '10-6', description: 'Ocupado — aguardar contacto', severity: 'baixo' as const,
-        detail: 'A unidade está empenhada e não pode responder de imediato. Pedir para aguardar.' },
-      { code: '10-7', description: 'Fora de serviço', severity: 'baixo' as const,
-        detail: 'Encerramento de turno ou indisponibilidade temporária. A unidade não está operacional.' },
-      { code: '10-8', description: 'Em serviço / Disponível para ocorrências', severity: 'baixo' as const,
-        detail: 'Início de turno ou retorno à disponibilidade após ocorrência. Sinaliza ao CCCO que a unidade está pronta.' },
-      { code: '10-9', description: 'Repetir mensagem — não foi percebida', severity: 'baixo' as const,
-        detail: 'A mensagem anterior não foi compreendida. Pedir repetição completa.' },
-      { code: '10-10', description: 'Negativo / Não concordo / Impossível', severity: 'baixo' as const,
-        detail: 'Resposta negativa. Indica recusa, impossibilidade ou desacordo com uma questão ou proposta.' },
-      { code: '10-15', description: 'Transportando detido(s) na viatura', severity: 'medio' as const,
-        detail: 'Obrigatório comunicar ao CCCO quando há detidos em transporte. Registar no MDT: identidade do detido e destino.' },
-      { code: '10-17', description: 'Em deslocação para o local indicado', severity: 'baixo' as const,
-        detail: 'Unidade em rota para o destino. Comunicar ETA (tempo estimado de chegada) se possível.' },
-      { code: '10-20', description: 'Qual a tua localização?', severity: 'baixo' as const,
-        detail: 'Pedido de localização atual. A resposta deve incluir rua, número/cruzamento e bairro/zona. É o código mais usado em comunicações de rotina.' },
-      { code: '10-21', description: 'Contacto telefónico — ligar para [número/unidade]', severity: 'baixo' as const,
-        detail: 'Instrução para mudar do rádio para contacto telefónico. Útil para comunicações mais longas ou confidenciais.' },
-      { code: '10-23', description: 'No local da ocorrência', severity: 'baixo' as const,
-        detail: 'Unidade chegou ao local. Seguido de avaliação inicial da situação. O CCCO regista hora de chegada.' },
-      { code: '10-24', description: 'Missão concluída / Disponível', severity: 'baixo' as const,
-        detail: 'Ocorrência resolvida ou missão terminada. Unidade volta a estar disponível para nova atribuição.' },
-      { code: '10-27', description: 'Verificar carta de condução no sistema', severity: 'baixo' as const,
-        detail: 'Pedido de consulta de dados da carta de condução (validade, categoria, inibições) no sistema informático.' },
-      { code: '10-28', description: 'Verificar matrícula / Registo de veículo', severity: 'baixo' as const,
-        detail: 'Pedido de consulta da base de dados de veículos: proprietário, seguros, IPO, restrições, participação de furtado.' },
-      { code: '10-29', description: 'Verificar suspeito / Veículo em ficheiro (mandatos)', severity: 'medio' as const,
-        detail: 'Consulta aprofundada: mandatos de detenção, antecedentes criminais, veículos furtados, alertas Schengen. Obrigatório em detenções.' },
-      { code: '10-31', description: 'Crime em progresso — resposta imediata', severity: 'alto' as const,
-        detail: 'Ocorrência ativa a decorrer. Requer deslocação imediata com sinalética ativada. Comunicar ao CCCO e solicitar reforços se necessário.' },
-      { code: '10-32', description: 'Suspeito armado no local', severity: 'critico' as const,
-        detail: 'Presença confirmada de pessoa com arma. Máxima precaução. Não abordar sem reforços. Solicitar UEP/CI se disponível.' },
-      { code: '10-33', description: '🚨 EMERGÊNCIA — Apoio imediato a elemento policial', severity: 'critico' as const,
-        detail: 'CÓDIGO DE EMERGÊNCIA MÁXIMA. Elemento policial em perigo de vida. Todas as unidades disponíveis respondem imediatamente. Canal fica prioritário para este chamamento. CCCO coordena resposta total.' },
-      { code: '10-34', description: 'Distúrbio / Tumulto / Alteração da ordem pública', severity: 'alto' as const,
-        detail: 'Situação de desordem pública que pode escalar. Solicitar reforços preventivamente. Preparar equipamento de ordem pública se disponível.' },
-      { code: '10-35', description: 'Informação confidencial — mudar para canal seguro', severity: 'medio' as const,
-        detail: 'A informação que se segue é sensível e não deve ser transmitida em canal aberto. Mudar para frequência reservada ou contactar por telefone.' },
-      { code: '10-38', description: 'Paragem de veículo em curso', severity: 'medio' as const,
-        detail: 'Unidade está a imobilizar um veículo. Obrigatório comunicar matrícula e localização ao CCCO antes de abordar.' },
-      { code: '10-40', description: 'Deslocar sem sirene — abordagem silenciosa', severity: 'medio' as const,
-        detail: 'Instrução para chegar ao local sem sinalização sonora. Usado em situações táticas onde o efeito surpresa é importante (ex: apanhar suspeito em flagrante).' },
-      { code: '10-50', description: 'Acidente de viação', severity: 'alto' as const,
-        detail: 'Sinistro rodoviário. Comunicar se há feridos (10-52 INEM) e número de veículos envolvidos. Sinalizar o local e preservar para investigação.' },
-      { code: '10-52', description: 'Solicitar INEM / Ambulância para o local', severity: 'alto' as const,
-        detail: 'Pedido de apoio médico. Comunicar localização exata, número aproximado de vítimas e tipo de ferimentos se conhecido.' },
-      { code: '10-55', description: 'Suspeita de condução sob influência de álcool ou substâncias', severity: 'medio' as const,
-        detail: 'Condutor apresenta sinais de estar sob efeito de substâncias. Proceder a teste de álcool obrigatório.' },
-      { code: '10-80', description: '🚔 Perseguição em curso', severity: 'critico' as const,
-        detail: 'Perseguição policial ativa. Comunicar: direção, descrição do veículo, matrícula e velocidade estimada. Atualizar a cada 30 segundos. CCCO coordena bloqueios e apoio aéreo.' },
-      { code: '10-95', description: 'Suspeito imobilizado e detido', severity: 'medio' as const,
-        detail: 'Suspeito sob custódia policial. Comunicar ao CCCO e preparar transporte para esquadra.' },
-      { code: '10-99', description: '🔴 PRIORIDADE MÁXIMA — Vida em risco imediato', severity: 'critico' as const,
-        detail: 'Situação de vida ou morte com risco imediato. Supera qualquer outra comunicação no canal. Todas as unidades em alerta.' },
-    ],
-
-    hierarquias: [
-      // CARREIRA DE AGENTE (3 escalões)
-      { rank: 1, title: 'Agente', abbreviation: 'Ag.', category: 'Carreira de Agente',
-        description: 'Nível de entrada na PSP. Realiza patrulha de setor, atende ocorrências, executa fiscalizações e presta auxílio à comunidade. Trabalha sempre acompanhado no período inicial de adaptação. O efetivo previsto para 2025 é de 4.246 Agentes.' },
-      { rank: 2, title: 'Agente Principal', abbreviation: 'Ag. Ppal.', category: 'Carreira de Agente',
-        description: 'Progressão dentro da carreira de Agente. Maior autonomia operacional. Pode liderar patrulhas simples e orientar Agentes recém-admitidos. Efetivo previsto 2025: 11.829.' },
-      { rank: 3, title: 'Agente Coordenador', abbreviation: 'Ag. Coord.', category: 'Carreira de Agente',
-        description: 'Topo da carreira de Agente. Coordena múltiplas patrulhas num setor. Pode assumir liderança interina em ausência de Chefe. Efetivo previsto 2025: 1.591.' },
-
-      // CARREIRA DE CHEFE (3 escalões)
-      { rank: 4, title: 'Chefe', abbreviation: 'Ch.', category: 'Carreira de Chefe',
-        description: 'Primeiro nível da Carreira de Chefe. Supervisão direta de equipas de Agentes, gestão de ocorrências no terreno e garantia do cumprimento de protocolos. Efetivo previsto 2025: 506.' },
-      { rank: 5, title: 'Chefe Principal', abbreviation: 'Ch. Ppal.', category: 'Carreira de Chefe',
-        description: 'Supervisão de múltiplos Chefes e equipas. Gestão de turno completo. Interface operacional entre Agentes e Oficiais. Efetivo previsto 2025: 683.' },
-      { rank: 6, title: 'Chefe Coordenador', abbreviation: 'Ch. Coord.', category: 'Carreira de Chefe',
-        description: 'Topo da Carreira de Chefe. Coordenação operacional de setor alargado. Assessoria técnica aos Oficiais. Experiência sólida em gestão de patrulhas e ocorrências complexas. Efetivo previsto 2025: 853.' },
-
-      // CARREIRA DE OFICIAL (6 escalões)
-      { rank: 7, title: 'Subcomissário', abbreviation: 'Subcom.', category: 'Carreira de Oficial',
-        description: 'Primeiro posto de Oficial PSP. Formado no ISCPSI. Comanda secções, autoriza operações de média complexidade e assegura reporte hierárquico de ocorrências graves. Efetivo previsto 2025: 113.' },
-      { rank: 8, title: 'Comissário', abbreviation: 'Com.', category: 'Carreira de Oficial',
-        description: 'Comanda Esquadra ou Divisão Policial. Responsável pela estratégia operacional do setor, gestão de recursos humanos e materiais, e relação com outras entidades. Efetivo previsto 2025: 270.' },
-      { rank: 9, title: 'Subintendente', abbreviation: 'Subint.', category: 'Carreira de Oficial',
-        description: 'Oficial Superior. Coordena operações multi-divisão. Pode assumir comando de Divisão Policial de maior dimensão ou funções de Estado-Maior em Comandos Metropolitanos. Efetivo previsto 2025: 269.' },
-      { rank: 10, title: 'Intendente', abbreviation: 'Int.', category: 'Carreira de Oficial',
-        description: 'Gestão estratégica de Comando Distrital ou funções na Direção Nacional. Interface com entidades governamentais, autarquias e outras forças de segurança. Efetivo previsto 2025: 105.' },
-      { rank: 11, title: 'Superintendente', abbreviation: 'Sup.', category: 'Carreira de Oficial',
-        description: 'Comanda Comando Metropolitano ou Distrital de grande dimensão (Lisboa, Porto). Ou exerce funções de DNA (Diretor Nacional Adjunto). Toma decisões estratégicas de âmbito alargado. Efetivo previsto 2025: 74.' },
-      { rank: 12, title: 'Superintendente-Chefe', abbreviation: 'Sup.-Ch.', category: 'Carreira de Oficial',
-        description: 'Posto máximo da Carreira de Oficial. Gestão dos grandes departamentos nacionais ou Comandante de maior Unidade. O Diretor Nacional é tipicamente Superintendente-Chefe. Efetivo previsto 2025: 20.' },
-
-      // DIREÇÃO NACIONAL
-      { rank: 13, title: 'Diretor Nacional Adjunto / Inspetor Nacional', abbreviation: 'DNA / IN', category: 'Direção Nacional',
-        description: 'Quatro Diretores Nacionais Adjuntos comandam as unidades orgânicas (UOOS, UOSACF, UORH, UOLF). O Inspetor Nacional dirige a Inspeção Nacional PSP. Reportam diretamente ao Diretor Nacional.' },
-      { rank: 14, title: 'Diretor Nacional', abbreviation: 'DN', category: 'Direção Nacional',
-        description: 'Máxima autoridade da PSP. Cargo único. Comanda toda a força policial a nível nacional. Responde ao Ministro da Administração Interna. Diretor Nacional atual (2024): Luís Miguel Ribeiro Carrilho, Superintendente-Chefe.' },
-    ],
-
-    abordagens: [
-      {
-        title: 'Abordagem a Suspeito a Pé — Protocolo Padrão',
-        shortDesc: 'Procedimento de abordagem individual com identificação e controlo de risco.',
-        content: `A abordagem a suspeito a pé é das situações mais comuns e mais perigosas para um agente PSP.
-
-PRÉ-ABORDAGEM:
-• Avaliar o ambiente: saídas, possíveis cúmplices, objetos na mão do suspeito
-• Posicionar corretamente: nunca com as costas à entrada, manter distância mínima 2-3m
-• Avisar ao rádio: "10-38 a pé, [localização], [descrição do suspeito]"
-
-ABORDAGEM (em par — formação padrão):
-Agente 1 (principal): fala com o suspeito, solicita documentos, mantém posição lateral
-Agente 2 (apoio): posição de ângulo oposto, cobre movimentos, observa ambiente
-
-COMUNICAÇÃO:
-• "Boa tarde, PSP. Os seus documentos de identificação, por favor."
-• Tom controlado, autoritário mas não agressivo
-• Manter contato visual constante
-
-EM CASO DE RECUSA DE IDENTIFICAÇÃO:
-• A recusa de identificação a OPC é crime de desobediência (art. 348 CP)
-• Informar claramente: "É obrigado por lei a identificar-se. Recusa implica detenção para identificação."
-• Registar a recusa e proceder a detenção para identificação se mantiver recusa
-
-EM CASO DE FUGA:
-• Ordem de paragem verbal clara e audível: "PSP — PARE! POLÍCIA!"
-• Comunicar ao rádio imediatamente: direção, descrição, hora
-• Avaliação proporcional de perseguição a pé vs viatura
-
-EM ROLEPLAY: a qualidade da abordagem define a cena. Um agente que fala com autoridade e segurança cria RP muito mais rico do que um que age mecanicamente.`,
-        tags: ['Abordagem', 'Suspeito', 'Identificação', 'Protocolo'],
-      },
-      {
-        title: 'Negociação com Reféns — Crise e Sequestro',
-        shortDesc: 'Protocolo de resposta e negociação em situações de crise com reféns.',
-        content: `A PSP tem negociadores especializados formados em técnicas de gestão de crise (curso específico no ISCPSI/EPP).
-
-FASE 1 — CHEGADA E CONTENÇÃO:
-• Estabelecer 2 perímetros: interno (imediato) e externo (afastamento de civis)
-• Ninguém entra ou sai da zona interna sem autorização do Comandante de Operações
-• Cortar comunicações externas do local se possível
-• Solicitar imediatamente: negociador, CI/GOE (UEP), INEM standby
-
-FASE 2 — AVALIAÇÃO:
-• Quantos reféns? Estado de saúde? Identidade?
-• Quantos sequestradores? Armamento visível?
-• Quais as exigências? (não tomar decisões sobre exigências sem negociador)
-• Há elementos vulneráveis (crianças, doentes)?
-
-FASE 3 — NEGOCIAÇÃO (só o negociador fala):
-Princípios fundamentais:
-• Uma só voz — o negociador. Ninguém mais comunica com o sequestrador.
-• Escuta ativa — deixar falar, validar emoções, não interromper
-• Nunca prometer o que não se pode cumprir
-• Tempo é aliado — quanto mais tempo, menor a tensão e mais hipóteses de saída pacífica
-• Pequenas concessões criam reciprocidade
-
-FASE 4 — RESOLUÇÃO:
-• Entrega voluntária: instruções claras de saída segura
-• Intervenção tática (GOE): só quando todas as alternativas pacíficas estão esgotadas e há risco iminente
-
-APÓS A CRISE:
-• Acompanhamento psicológico a reféns e negociadores
-• Debriefing completo de todos os elementos
-• RUAF se houve uso de força`,
-        tags: ['Reféns', 'Negociação', 'Crise', 'GOE', 'CI'],
-      },
-      {
-        title: 'Segurança em Grandes Eventos',
-        shortDesc: 'Policiamento de espetáculos desportivos e eventos de grande concentração.',
-        content: `A PSP tem competência específica em segurança a grandes eventos (Lei n.º 39/2009 — regime jurídico de combate à violência no desporto).
-
-PLANEAMENTO PRÉ-EVENTO:
-• Reunião de coordenação com organização, clubes e CCCO
-• Avaliação de risco: historial de incidentes, rivalidades entre adeptos, capacidade do recinto
-• Definição de força policial necessária (Mapa de Pessoal de Policiamento)
-• Posicionamento de unidades: acesso, interior, exterior, vias de fuga
-
-NO DIA DO EVENTO:
-• Revista à entrada — armas, pirotecnia, álcool (lei proíbe)
-• Separação de adeptos visitantes dos locais (setor específico)
-• DIP (Departamento de Informações Policiais) — spotters a identificar instigadores
-• Comunicações contínuas entre sectores via rádio
-• Reserva tática disponível (CI se necessário)
-
-SITUAÇÕES COMUNS EM RP:
-• Adeptos sem bilhete a tentar entrar → protocolo de não entrada + registo
-• Briga nos acessos → contenção, separação, possível detenção
-• Pirotecnia no interior → identificar responsável, expulsão + possível detenção
-• Invasão do relvado → barreira física, contenção e devolução ordenada
-
-APÓS O EVENTO:
-• Acompanhamento de saída organizada
-• Relatório de policiamento (DIP recebe para análise de padrões)
-• RUAF se houve uso de força`,
-        tags: ['Eventos', 'Desporto', 'DIP', 'Spotters', 'Lei 39/2009'],
-      },
-    ],
-
-    situacoes: [
-      {
-        title: 'Violência Doméstica — Resposta em Flagrante',
-        shortDesc: 'Protocolo PSP para ocorrências de violência doméstica (programa específico).',
-        content: `A violência doméstica é crime público (art. 152 CP) — a PSP DEVE agir independentemente de queixa da vítima.
-
-CHEGADA AO LOCAL:
-• Separar imediatamente agressor e vítima em divisões diferentes
-• Avaliar estado de saúde da vítima — solicitar INEM se houver ferimentos
-• Verificar se há menores no espaço e avaliar risco para crianças
-
-AVALIAÇÃO DE RISCO — Ficha RVD (Risco de Violência Doméstica):
-Perguntas padronizadas sobre: frequência e gravidade das agressões, uso de armas, ameaças de morte, filhos em risco, álcool/drogas, histórico policial do agressor
-
-DECISÃO DE DETENÇÃO:
-• Detenção obrigatória em flagrante delito (crime semipúblico não — é PÚBLICO)
-• Detenção se houver perigo para a vítima mesmo sem flagrante (medidas de coação urgentes)
-
-APOIO À VÍTIMA:
-• Informar sobre direitos, apoios disponíveis (APAV, casas de abrigo)
-• Fotografar lesões com o consentimento da vítima (prova)
-• Auto de notícia detalhado com todas as circunstâncias
-• Encaminhar para Gabinete de Apoio à Vítima (GAV) da Esquadra
-
-FOLLOW-UP OBRIGATÓRIO:
-• Contacto com vítima nas 72h seguintes
-• Verificação de cumprimento de medidas de afastamento (se aplicadas)
-• Coordenação com CPCJ (Comissão de Proteção de Crianças e Jovens) se há menores
-
-EM ROLEPLAY: este é um dos cenários mais exigentes emocionalmente. Requer equilíbrio entre profissionalismo policial e sensibilidade humana.`,
-        tags: ['Violência Doméstica', 'VD', 'GAV', 'APAV', 'Crime Público'],
-      },
-      {
-        title: 'Assalto a Banco com Reféns — Coordenação Total',
-        shortDesc: 'Resposta PSP a assalto bancário em curso — gestão de crise de alta complexidade.',
-        content: `ALERTA INICIAL (chamada 112 ou alarme silencioso do banco):
-• Deslocar com 10-40 (sem sirene) se assalto em curso — não alertar assaltantes
-• Comunicar ao CCCO: confirmação de informação, número de unidades a deslocar
-
-CHEGADA AO LOCAL:
-• Perímetro externo imediato: afastar civis da zona de visibilidade
-• Confirmar a situação (reféns? número de assaltantes? armamento?)
-• Comunicar: "10-31, assalto bancário confirmado, reféns, solicitamos negociador e CI, [local]"
-
-ESTRUTURA DE COMANDO NO LOCAL:
-• Comandante de Operações — Oficial mais graduado presente
-• Negociador — único ponto de contacto com assaltantes
-• Equipa tática (CI/GOE) — posicionamento silencioso, coberturas
-• Equipa de apoio — controlo de perímetro, gestão de civis e media
-
-NEGOCIAÇÃO:
-• Exigências comuns: viatura de fuga, helicóptero, dinheiro
-• Nenhuma exigência é concedida sem avaliação do Comandante
-• Estratégia: prolongar o tempo, reduzir tensão, isolar assaltantes do exterior
-
-INTERVENÇÃO TÁTICA (último recurso):
-• GOE é a unidade especializada para resolução de situações de reféns
-• Intervenção só autorizada pelo Comandante com avaliação de risco favorável
-• Coordenação total com negociador antes de qualquer movimento
-
-APÓS RESOLUÇÃO:
-• INEM para triagem de reféns
-• Preservação de cena para PJ/investigação
-• Separar e deter assaltantes imediatamente
-• RUAF obrigatório
-• Debriefing completo`,
-        tags: ['Banco', 'Reféns', 'GOE', 'Negociação', 'Comando'],
-      },
-      {
-        title: 'Perseguição Policial — Gestão e Segurança',
-        shortDesc: 'Protocolo de perseguição terrestre com avaliação contínua de risco.',
-        content: `A PSP realiza 21.500 operações de fiscalização rodoviária por ano. As perseguições emergem frequentemente dessas paragens.
-
-INÍCIO DA PERSEGUIÇÃO:
-• Sinalética: luzes azuis + sirene OBRIGATÓRIAS (identifica claramente como policial)
-• Comunicação imediata: "10-80, [matrícula], [descrição veículo], [localização], [direção], [velocidade estimada]"
-• CCCO assume coordenação: informa outras unidades, prepara bloqueios
-
-DURANTE A PERSEGUIÇÃO:
-• Atualizar localização e direção a cada 30 segundos
-• Nunca ultrapassar o fugitivo em velocidade que ponha civis em risco
-• Solicitar apoio para interceptação em pontos estratégicos
-• Avaliar CONTINUAMENTE: vale o risco para os civis?
-
-TÉCNICAS DE INTERCEPTAÇÃO:
-• Barreira estática: viaturas perpendiculares à via (nunca manter agentes junto às viaturas)
-• Spike strip (pinos): instalar antecipadamente com coordenação de CCCO
-• Apoio aéreo (se disponível): coordenação via CCCO
-
-QUANDO TERMINAR A PERSEGUIÇÃO (decisão do Comandante):
-• Quando o risco para terceiros supera o benefício de capturar o suspeito
-• Quando se perde o rasto do veículo
-• Comunicar último avistamento e características ao CCCO — outras unidades assumem
-
-APÓS PARAGEM:
-• Abordagem tática a veículo (ver procedimento)
-• Se condutor apresenta sinais de lesão: INEM
-• Documentar detalhadamente para relatório — perseguições são objeto de supervisão
-
-EM ROLEPLAY: a perseguição não é eterna nem ilimitada. Um agente que persegue a 200km/h pela cidade ignorando o risco para civis está a fazer Fail RP e GTA Driving.`,
-        tags: ['Perseguição', '10-80', 'CCCO', 'Spike', 'Bloqueio'],
-      },
-    ],
-  },
-};
-
+    name: 'Polícia de Segurança Pública',
+    shortName: 'PSP',
+    description: 'Força de segurança uniformizada e armada, de natureza pública e dotada de autonomia administrativa. Missão: assegurar a legalidade democrática, garantir a segurança interna e proteger os direitos dos cidadãos (Lei n.º 53/2007, 31/08).',
+    color: '#1d4ed8',
+    accentColor: '#3b82f6',
+    icon: '🛡️',
+  
+    sections: {
+      guias: [
+        {
+          title: 'Missão, Visão e Valores Institucionais',
+          shortDesc: 'Fundamentos legais e estratégicos da PSP — o que é, para que serve e como atua.',
+          content: `Missão (Lei n.º 53/2007): Assegurar a legalidade democrática, garantir a segurança interna e proteger os direitos dos cidadãos.
+  
+  Visão (Estratégia PSP 2025-2027): "PRESENTE PELA PROXIMIDADE, PRÓXIMA NA SEGURANÇA!"
+  
+  Orientações Estratégicas:
+  • Excelência Operacional
+  • Credibilidade Institucional
+  • Reconhecimento Organizacional
+  
+  Princípios de Atuação:
+  • Integridade e Disciplina
+  • Defesa da Legalidade
+  • Respeito pelos Direitos, Liberdades e Garantias
+  • Proximidade e Humanismo
+  • Serviço Público de Qualidade
+  
+  Modelo Concetual de Atuação (5 elementos-chave):
+  Proximidade → Dissuasão → Prevenção → Deteção → Resposta → Adaptação
+  
+  Eixos Estratégicos 2025-2027:
+  EE1 — Sentimento de segurança dos cidadãos
+  EE2 — Formação inicial, contínua e de especialização
+  EE3 — Valorização socioprofissional do capital humano
+  EE4 — Coesão interna
+  EE5 — Inovação e desenvolvimento
+  EE6 — Comunicação, imagem institucional e cooperação internacional`,
+          tags: ['Missão', 'Visão', 'Lei 53/2007', 'Estratégia 2025'],
+        },
+        {
+          title: 'Estrutura Geral da PSP',
+          shortDesc: 'Organização territorial e unidades que compõem a PSP a nível nacional.',
+          content: `A PSP compreende a Direção Nacional, as unidades de polícia e os estabelecimentos de ensino policial.
+  
+  UNIDADES DE POLÍCIA:
+  
+  1. Unidade Especial de Polícia (UEP)
+     • CI — Corpo de Intervenção
+     • GOE — Grupo de Operações Especiais
+     • CSP — Corpo de Segurança Pessoal
+     • CIEXSS — Centro de Inativação de Explosivos e Segurança em Subsolo
+     • GOC — Grupo Operacional Cinotécnico
+  
+  2. Comandos Metropolitanos
+     • COMETLIS — Comando Metropolitano de Lisboa
+     • Comando Metropolitano do Porto
+  
+  3. Comandos Regionais
+     • Comando Regional dos Açores
+     • Comando Regional da Madeira
+  
+  4. Comandos Distritais (16)
+     Aveiro | Beja | Braga | Bragança | Castelo Branco | Coimbra
+     Évora | Faro | Guarda | Leiria | Portalegre | Santarém
+     Setúbal | Viana do Castelo | Vila Real | Viseu
+  
+  ESTABELECIMENTOS DE ENSINO POLICIAL:
+  • ISCPSI — Instituto Superior de Ciências Policiais e Segurança Interna
+    (forma Oficiais PSP; ensino superior universitário)
+  • EPP — Escola Prática de Polícia
+    (formação de Agentes e Chefes; Torres Novas)
+  
+  EFETIVO 2025: ~20.559 elementos com funções policiais + 1.011 pessoal civil = 21.570 total`,
+          tags: ['Estrutura', 'Territorial', 'UEP', 'ISCPSI', 'EPP'],
+        },
+        {
+          title: 'Direção Nacional — Estrutura Interna',
+          shortDesc: 'Composição da Direção Nacional e as quatro unidades orgânicas.',
+          content: `A Direção Nacional da PSP (DN/PSP) compreende:
+  
+  TOPO:
+  • Diretor Nacional (Superintendente-Chefe — Luís Miguel Ribeiro Carrilho, desde 2024)
+  • Diretores Nacionais Adjuntos (4)
+  • Inspetor Nacional
+  
+  ÓRGÃOS DE CONSULTA E DISCIPLINA:
+  • Conselho Superior de Polícia
+  • Conselho de Deontologia e Disciplina
+  • Junta Superior de Saúde
+  • Inspeção Nacional
+  
+  GABINETES DO DN:
+  • Gabinete do Diretor Nacional
+  • Gabinete de Estudos e Planeamento (GEP)
+  • Gabinete de Assuntos Jurídicos (GAJ)
+  • Gabinete de Imprensa e Relações Públicas (GIRP)
+  • Gabinete de Deontologia e Disciplina (GDD)
+  • Centro de Assistência Religiosa
+  • Departamento de Apoio Geral (DAG)
+  
+  QUATRO UNIDADES ORGÂNICAS:
+  • DNA UOOS — Unidade Orgânica de Operações e Segurança
+    (Dep. Operações, Dep. Informações, Dep. Investigação Criminal,
+     Dep. Armas e Explosivos, Dep. Segurança Privada, Dep. Sistemas Informação)
+  
+  • DNA UOSACF — Unidade Orgânica de Segurança Aeroportuária e Controlo Fronteiriço
+    (Dep. Segurança Aeroportuária, Dep. Gestão Integrada de Fronteiras)
+  
+  • DNA UORH — Unidade Orgânica de Recursos Humanos
+    (Dep. Recursos Humanos, Dep. Formação, Dep. Saúde e Assistência na Doença)
+  
+  • DNA UOLF — Unidade Orgânica de Logística e Finanças
+    (Dep. Logística, Dep. Infraestruturas, Dep. Gestão Financeira,
+     Gabinete Planeamento Controlo Logístico e Financeiro)`,
+          tags: ['DN/PSP', 'Direção Nacional', 'UOOS', 'UORH', 'Estrutura Interna'],
+        },
+        {
+          title: 'Comunicações Rádio — Protocolo e Fonético',
+          shortDesc: 'Procedimentos de comunicação rádio e alfabeto fonético NATO em uso na PSP.',
+          content: `REGRAS BASE DE COMUNICAÇÃO:
+  • Sempre identificar a unidade antes de transmitir: "Alfa 1 para Central"
+  • Dar localização (10-20) antes de reportar qualquer ocorrência
+  • Em perseguições: atualizar direção e matrícula de 30 em 30 segundos
+  • Nunca bloquear o canal com conversas desnecessárias
+  • Confirmação de receção sempre com 10-4
+  • Em emergência: 10-33 tem prioridade absoluta — todas as outras comunicações cedem
+  
+  ALFABETO FONÉTICO NATO (padrão operacional):
+  A=Alfa  B=Bravo  C=Charlie  D=Delta  E=Echo  F=Foxtrot
+  G=Golf  H=Hotel  I=India  J=Juliett  K=Kilo  L=Lima
+  M=Mike  N=November  O=Oscar  P=Papa  Q=Quebec  R=Romeo
+  S=Sierra  T=Tango  U=Uniform  V=Victor  W=Whiskey
+  X=X-Ray  Y=Yankee  Z=Zulu
+  
+  NÚMEROS NATO:
+  1=Wun | 2=Too | 3=Tree | 4=Fow-er | 5=Fife
+  6=Six | 7=Seven | 8=Ait | 9=Nin-er | 0=Ze-ro
+  
+  EXEMPLOS DE USO:
+  • Matrícula "AA-12-BB" → "Alfa-Alfa, Wun-Too, Bravo-Bravo"
+  • Canal seguro: "Muda para Sierra-Sierra" (canal seguro)
+  • Identificar patrulha: "Alfa 1" (1ª patrulha do turno A)`,
+          tags: ['Rádio', 'NATO', 'Fonético', 'Comunicações'],
+        },
+        {
+          title: 'Programas Especiais de Policiamento',
+          shortDesc: 'Programas de proximidade da PSP dirigidos a grupos específicos da comunidade.',
+          content: `A PSP desenvolve programas de policiamento de proximidade (MIPP — Modelo Integrado de Policiamento de Proximidade):
+  
+  • Escola Segura — Segurança em ambiente escolar
+  • Apoio 65 — Idosos em Segurança — proteção de idosos
+  • Violência Doméstica — apoio a vítimas e prevenção
+  • Comércio Seguro — segurança em estabelecimentos comerciais
+  • Significativo Azul — apoio a pessoas com perturbações do espectro autista
+  • Táxi Seguro — segurança de taxistas e passageiros
+  • Abastecimento Seguro — segurança em postos de combustível
+  • Farmácia Segura — segurança em farmácias
+  • Estou Aqui — apoio a pessoas com Alzheimer ou demência
+  
+  POLICIAMENTO DE GRANDE EVENTOS:
+  • Espetáculos desportivos (fiscalização DSP — 18 ações/ano)
+  • Eventos de espetáculo (40 ações/ano)
+  • Policiamento sazonal: Carnaval, Páscoa, Natal, Verão
+  
+  EM ROLEPLAY: estes programas são excelentes para criar RP de proximidade. Um agente PSP que interage com idosos (Apoio 65) ou em escolas (Escola Segura) cria narrativas muito mais ricas do que simples patrulhas reativas.`,
+          tags: ['MIPP', 'Proximidade', 'Escola Segura', 'Comunidade'],
+        },
+      ],
+  
+      procedimentos: [
+        {
+          title: 'Uso de Arma de Fogo — Protocolo Legal (RUAF)',
+          shortDesc: 'Quando e como pode um agente PSP usar a arma de fogo — enquadramento legal.',
+          content: `O uso de arma de fogo é regulado por lei e sujeito a RUAF (Relatório de Uso de Arma de Fogo), obrigatório em qualquer situação onde a arma seja desembainhada ou disparada.
+  
+  PRINCÍPIOS LEGAIS (Lei de Segurança Interna + DL 457/99):
+  • Necessidade: só quando imprescindível para proteger vida (própria ou alheia)
+  • Proporcionalidade: força não superior ao estritamente necessário
+  • Adequação: resposta adequada ao tipo de ameaça
+  
+  ESCALADA DE FORÇA (progressiva e obrigatória):
+  Nível 1 — Presença + Comandos verbais
+  Nível 2 — Controlo físico (imobilização)
+  Nível 3 — Força não-letal (spray OC, bastão, taser)
+  Nível 4 — Arma de fogo (último recurso, ameaça letal iminente)
+  
+  QUANDO É PERMITIDO DESEMBAINHAR (sem disparar):
+  • Suspeita fundamentada de porte de arma
+  • Detenção de suspeito de crime violento
+  • Situações de risco elevado avaliadas pelo agente
+  
+  APÓS QUALQUER UTILIZAÇÃO:
+  • Comunicar imediatamente ao superior hierárquico
+  • Preencher RUAF (Relatório de Uso de Arma de Fogo)
+  • Preservar cena para investigação
+  • Solicitar INEM se houver feridos
+  
+  EM ROLEPLAY: nunca saltar níveis de força sem justificação narrativa sólida. Isso é Fail RP e viola protocolos reais da PSP.`,
+          tags: ['Arma de Fogo', 'RUAF', 'Força', 'Legal'],
+        },
+        {
+          title: 'Abordagem a Veículo — Paragem e Fiscalização',
+          shortDesc: 'Protocolo completo para imobilizar e abordar veículos suspeitos.',
+          content: `FASE 1 — COMUNICAÇÃO PRÉVIA:
+  • Comunicar ao rádio: matrícula, marca, cor, direção e motivo antes de imobilizar
+  • Pedir verificação no sistema (10-29): mandatos, veículos furtados, antecedentes
+  • Solicitar apoio se suspeita de perigo elevado
+  
+  FASE 2 — IMOBILIZAÇÃO:
+  • Sinalética luminosa e sonora ativada (exceto operação discreta — 10-40)
+  • Posicionar a viatura policial em ângulo de 45° atrás-direita do veículo suspeito
+  • Nunca parar diretamente atrás — ângulo protege de tiro e melhora visibilidade
+  
+  FASE 3 — ABORDAGEM:
+  • Agente 1 (principal): aproxima pelo lado do condutor, mantém posição de proteção
+  • Agente 2 (apoio): cobre lado do passageiro, observa interior e ambiente
+  • Identificação clara: "PSP — documentos do veículo e identificação, por favor"
+  • Nunca deixar condutor ou passageiro colocar mãos em zonas não visíveis
+  
+  FASE 4 — VERIFICAÇÃO:
+  • Carta de condução, documento de identificação, registo do veículo, seguro obrigatório
+  • Verificar validade da inspeção periódica
+  • Registar no MDT (Mobile Data Terminal) a abordagem
+  
+  FASE 5 — ENCERRAMENTO:
+  • Se tudo em ordem: devolver documentos, registar 10-24
+  • Se infração: comunicar ao condutor claramente, emitir auto de contraordenação
+  • Se detenção: protocolo de detenção (ver procedimento específico)`,
+          tags: ['Veículo', 'Fiscalização', 'Abordagem', 'MDT'],
+        },
+        {
+          title: 'Detenção — Procedimento Completo',
+          shortDesc: 'Como efetuar uma detenção legal e correctamente documentada em RP.',
+          content: `BASE LEGAL: Art. 254-261 CPP (Código de Processo Penal)
+  A detenção só é válida em flagrante delito ou com mandado judicial.
+  
+  PRÉ-DETENÇÃO:
+  • Avaliar risco — solicitar reforços se necessário
+  • Comunicar ao rádio intenção: "Alfa 1 para Central, vou proceder a detenção em [local]"
+  • Verificar se há outros suspeitos no perímetro
+  
+  EXECUÇÃO:
+  1. "PSP — Polícia! Não se mexa! Mãos onde eu as possa ver!"
+  2. Imobilização física — sempre com o mínimo de força necessária
+  3. Algemas — pelas costas em situação de risco; pela frente se cooperativo
+  4. Busca de segurança imediata — verificar armas e objetos perigosos
+  5. Informar dos direitos: "Está detido. Tem direito a advogado e a não se auto-incriminar."
+  6. Comunicar ao rádio: "10-15, um detido, [local], [motivo]"
+  
+  PÓS-DETENÇÃO:
+  • Transportar para Esquadra
+  • Registo completo no MDT: identidade, crime, circunstâncias, hora, local, agentes presentes
+  • Busca formal (com agente do mesmo sexo)
+  • Direito a chamada telefónica
+  • Registo de objetos apreendidos (cadeia de custódia)
+  • Interrogatório pelo Oficial de Serviço
+  
+  TEMPO MÁXIMO DE DETENÇÃO sem apresentação ao MP: 48 horas (art. 254 CPP)
+  
+  EM RP: cada passo anunciado em voz alta cria cena — o detido tem direito a reação (Pain RP, diálogo, negação). Não fazer a detenção mecânica.`,
+          tags: ['Detenção', 'CPP', 'Algemas', 'MDT', 'Direitos'],
+        },
+        {
+          title: 'Fiscalização Rodoviária — Protocolo e Poderes',
+          shortDesc: 'Competências da PSP em fiscalização rodoviária e procedimentos de controlo.',
+          content: `A PSP tem competência primária de fiscalização rodoviária nas zonas urbanas. Em estradas nacionais fora de zonas urbanas, a competência é da GNR.
+  
+  POSTO DE FISCALIZAÇÃO:
+  • Sinalização prévia mínima 150m antes do posto
+  • Agentes com colete refletor obrigatório
+  • Sinal de paragem: braço estendido horizontalmente ou lanterna intermitente
+  • Paragem obrigatória à ordem da PSP — recusa é crime
+  
+  DOCUMENTOS A VERIFICAR:
+  • Carta de Condução (ou equivalente estrangeiro)
+  • Documento de Identificação (BI/CC/Passaporte)
+  • Documento do Veículo (Certificado de Matrícula)
+  • Seguro Obrigatório Automóvel (validade)
+  • Inspeção Periódica Obrigatória (IUC válido confirma IPO)
+  
+  TESTES E CONTROLOS:
+  • Álcool: taxa legal máxima 0,5 g/L (0,2 g/L para novos condutores e profissionais)
+  • Recusa de teste de álcool: crime de desobediência + detenção
+  • Velocidade: via radares (Multanova, Vitronic, Laser Cam4 — total 128 unidades PSP)
+  • Pesos e dimensões: balanças rodoviárias
+  
+  INFRAÇÕES MAIS COMUNS EM RP:
+  • Excesso de velocidade (10-55 se suspeita de álcool)
+  • Falta de documentação
+  • Telemóvel ao volante
+  • Não uso de cinto
+  
+  CONTRA-ORDENAÇÕES vs CRIMES:
+  • CO: coima, possível inibição de conduzir (ex: excesso de velocidade)
+  • Crime: detenção possível (ex: condução sem habilitação, álcool acima de 1,2 g/L)`,
+          tags: ['Rodoviária', 'Álcool', 'Radar', 'Fiscalização'],
+        },
+        {
+          title: 'Investigação Criminal — Competências PSP',
+          shortDesc: 'Âmbito de investigação criminal da PSP e articulação com o Ministério Público.',
+          content: `A PSP tem órgão de polícia criminal (OPC) próprio — o DIC (Departamento de Investigação Criminal).
+  
+  COMPETÊNCIAS DE INVESTIGAÇÃO DA PSP:
+  • Crimes contra pessoas: ofensas corporais, ameaças, sequestro
+  • Crimes contra propriedade: furto, roubo, dano
+  • Violência doméstica (programa específico)
+  • Crimes informáticos (SIC — Sistema de Informação Criminal)
+  • Crimes no âmbito de espetáculos desportivos (DIP + GOC)
+  • Segurança Privada: crimes relacionados com armas e explosivos (DAE)
+  
+  ARTICULAÇÃO COM MP (Ministério Público):
+  • PSP age como OPC sob direção do MP em processo penal
+  • Auto de Notícia → Inquérito (MP dirige) → PSP executa diligências delegadas
+  • Detenção em flagrante → apresentar ao MP em 48h
+  
+  TÉCNICAS DE INVESTIGAÇÃO:
+  • Recolha de prova no local (preservar cena, fotografar, recolher impressões)
+  • Audição de testemunhas e suspeitos (auto de declarações)
+  • Pesquisa Encoberta de Informações (agentes especializados)
+  • Análise de informações criminais (DIC)
+  • Cooperação com EUROPOL, INTERPOL (via DSIC/DIC)
+  
+  POLÍCIA TÉCNICA FORENSE (reorganização em curso 2025):
+  • Recolha de ADN, impressões digitais, traços balísticos
+  • Análise laboratorial em coordenação com laboratórios forenses
+  
+  EM RP: uma investigação bem conduzida pode durar várias sessões. Recolher provas, ouvir testemunhas, elaborar autos — isso é RP rico e realista.`,
+          tags: ['Investigação', 'DIC', 'MP', 'OPC', 'Forense'],
+        },
+      ],
+  
+      codigos: [
+        // --- CÓDIGOS 10 REAIS PSP ---
+        { code: '10-0', description: 'Cuidado / Atenção redobrada na transmissão', severity: 'medio' as const,
+          detail: 'Alerta genérico para atenção. Usado quando há informação sensível ou situação que requer cuidado. Não é emergência, mas exige atenção.' },
+        { code: '10-1', description: 'Fraca receção — pedir repetição ou reposicionamento', severity: 'baixo' as const,
+          detail: 'Sinal fraco, mensagem não percebida. Pedir ao transmissor que repita ou mude de posição.' },
+        { code: '10-2', description: 'Boa receção de sinal', severity: 'baixo' as const,
+          detail: 'Confirmação de que o sinal está a ser recebido claramente.' },
+        { code: '10-3', description: 'Parar transmissão / Silêncio no canal', severity: 'medio' as const,
+          detail: 'Ordenar silêncio imediato no canal. Usado quando há situação prioritária a tratar.' },
+        { code: '10-4', description: 'Recebido / OK / Confirmado', severity: 'baixo' as const,
+          detail: 'Código universal de confirmação. A mensagem foi recebida e compreendida. Equivale a "Roger" em terminologia militar.' },
+        { code: '10-6', description: 'Ocupado — aguardar contacto', severity: 'baixo' as const,
+          detail: 'A unidade está empenhada e não pode responder de imediato. Pedir para aguardar.' },
+        { code: '10-7', description: 'Fora de serviço', severity: 'baixo' as const,
+          detail: 'Encerramento de turno ou indisponibilidade temporária. A unidade não está operacional.' },
+        { code: '10-8', description: 'Em serviço / Disponível para ocorrências', severity: 'baixo' as const,
+          detail: 'Início de turno ou retorno à disponibilidade após ocorrência. Sinaliza ao CCCO que a unidade está pronta.' },
+        { code: '10-9', description: 'Repetir mensagem — não foi percebida', severity: 'baixo' as const,
+          detail: 'A mensagem anterior não foi compreendida. Pedir repetição completa.' },
+        { code: '10-10', description: 'Negativo / Não concordo / Impossível', severity: 'baixo' as const,
+          detail: 'Resposta negativa. Indica recusa, impossibilidade ou desacordo com uma questão ou proposta.' },
+        { code: '10-15', description: 'Transportando detido(s) na viatura', severity: 'medio' as const,
+          detail: 'Obrigatório comunicar ao CCCO quando há detidos em transporte. Registar no MDT: identidade do detido e destino.' },
+        { code: '10-17', description: 'Em deslocação para o local indicado', severity: 'baixo' as const,
+          detail: 'Unidade em rota para o destino. Comunicar ETA (tempo estimado de chegada) se possível.' },
+        { code: '10-20', description: 'Qual a tua localização?', severity: 'baixo' as const,
+          detail: 'Pedido de localização atual. A resposta deve incluir rua, número/cruzamento e bairro/zona. É o código mais usado em comunicações de rotina.' },
+        { code: '10-21', description: 'Contacto telefónico — ligar para [número/unidade]', severity: 'baixo' as const,
+          detail: 'Instrução para mudar do rádio para contacto telefónico. Útil para comunicações mais longas ou confidenciais.' },
+        { code: '10-23', description: 'No local da ocorrência', severity: 'baixo' as const,
+          detail: 'Unidade chegou ao local. Seguido de avaliação inicial da situação. O CCCO regista hora de chegada.' },
+        { code: '10-24', description: 'Missão concluída / Disponível', severity: 'baixo' as const,
+          detail: 'Ocorrência resolvida ou missão terminada. Unidade volta a estar disponível para nova atribuição.' },
+        { code: '10-27', description: 'Verificar carta de condução no sistema', severity: 'baixo' as const,
+          detail: 'Pedido de consulta de dados da carta de condução (validade, categoria, inibições) no sistema informático.' },
+        { code: '10-28', description: 'Verificar matrícula / Registo de veículo', severity: 'baixo' as const,
+          detail: 'Pedido de consulta da base de dados de veículos: proprietário, seguros, IPO, restrições, participação de furtado.' },
+        { code: '10-29', description: 'Verificar suspeito / Veículo em ficheiro (mandatos)', severity: 'medio' as const,
+          detail: 'Consulta aprofundada: mandatos de detenção, antecedentes criminais, veículos furtados, alertas Schengen. Obrigatório em detenções.' },
+        { code: '10-31', description: 'Crime em progresso — resposta imediata', severity: 'alto' as const,
+          detail: 'Ocorrência ativa a decorrer. Requer deslocação imediata com sinalética ativada. Comunicar ao CCCO e solicitar reforços se necessário.' },
+        { code: '10-32', description: 'Suspeito armado no local', severity: 'critico' as const,
+          detail: 'Presença confirmada de pessoa com arma. Máxima precaução. Não abordar sem reforços. Solicitar UEP/CI se disponível.' },
+        { code: '10-33', description: '🚨 EMERGÊNCIA — Apoio imediato a elemento policial', severity: 'critico' as const,
+          detail: 'CÓDIGO DE EMERGÊNCIA MÁXIMA. Elemento policial em perigo de vida. Todas as unidades disponíveis respondem imediatamente. Canal fica prioritário para este chamamento. CCCO coordena resposta total.' },
+        { code: '10-34', description: 'Distúrbio / Tumulto / Alteração da ordem pública', severity: 'alto' as const,
+          detail: 'Situação de desordem pública que pode escalar. Solicitar reforços preventivamente. Preparar equipamento de ordem pública se disponível.' },
+        { code: '10-35', description: 'Informação confidencial — mudar para canal seguro', severity: 'medio' as const,
+          detail: 'A informação que se segue é sensível e não deve ser transmitida em canal aberto. Mudar para frequência reservada ou contactar por telefone.' },
+        { code: '10-38', description: 'Paragem de veículo em curso', severity: 'medio' as const,
+          detail: 'Unidade está a imobilizar um veículo. Obrigatório comunicar matrícula e localização ao CCCO antes de abordar.' },
+        { code: '10-40', description: 'Deslocar sem sirene — abordagem silenciosa', severity: 'medio' as const,
+          detail: 'Instrução para chegar ao local sem sinalização sonora. Usado em situações táticas onde o efeito surpresa é importante (ex: apanhar suspeito em flagrante).' },
+        { code: '10-50', description: 'Acidente de viação', severity: 'alto' as const,
+          detail: 'Sinistro rodoviário. Comunicar se há feridos (10-52 INEM) e número de veículos envolvidos. Sinalizar o local e preservar para investigação.' },
+        { code: '10-52', description: 'Solicitar INEM / Ambulância para o local', severity: 'alto' as const,
+          detail: 'Pedido de apoio médico. Comunicar localização exata, número aproximado de vítimas e tipo de ferimentos se conhecido.' },
+        { code: '10-55', description: 'Suspeita de condução sob influência de álcool ou substâncias', severity: 'medio' as const,
+          detail: 'Condutor apresenta sinais de estar sob efeito de substâncias. Proceder a teste de álcool obrigatório.' },
+        { code: '10-80', description: '🚔 Perseguição em curso', severity: 'critico' as const,
+          detail: 'Perseguição policial ativa. Comunicar: direção, descrição do veículo, matrícula e velocidade estimada. Atualizar a cada 30 segundos. CCCO coordena bloqueios e apoio aéreo.' },
+        { code: '10-95', description: 'Suspeito imobilizado e detido', severity: 'medio' as const,
+          detail: 'Suspeito sob custódia policial. Comunicar ao CCCO e preparar transporte para esquadra.' },
+        { code: '10-99', description: '🔴 PRIORIDADE MÁXIMA — Vida em risco imediato', severity: 'critico' as const,
+          detail: 'Situação de vida ou morte com risco imediato. Supera qualquer outra comunicação no canal. Todas as unidades em alerta.' },
+      ],
+  
+      hierarquias: [
+        // CARREIRA DE AGENTE (3 escalões)
+        { rank: 1, title: 'Agente', abbreviation: 'Ag.', category: 'Carreira de Agente',
+          description: 'Nível de entrada na PSP. Realiza patrulha de setor, atende ocorrências, executa fiscalizações e presta auxílio à comunidade. Trabalha sempre acompanhado no período inicial de adaptação. O efetivo previsto para 2025 é de 4.246 Agentes.' },
+        { rank: 2, title: 'Agente Principal', abbreviation: 'Ag. Ppal.', category: 'Carreira de Agente',
+          description: 'Progressão dentro da carreira de Agente. Maior autonomia operacional. Pode liderar patrulhas simples e orientar Agentes recém-admitidos. Efetivo previsto 2025: 11.829.' },
+        { rank: 3, title: 'Agente Coordenador', abbreviation: 'Ag. Coord.', category: 'Carreira de Agente',
+          description: 'Topo da carreira de Agente. Coordena múltiplas patrulhas num setor. Pode assumir liderança interina em ausência de Chefe. Efetivo previsto 2025: 1.591.' },
+  
+        // CARREIRA DE CHEFE (3 escalões)
+        { rank: 4, title: 'Chefe', abbreviation: 'Ch.', category: 'Carreira de Chefe',
+          description: 'Primeiro nível da Carreira de Chefe. Supervisão direta de equipas de Agentes, gestão de ocorrências no terreno e garantia do cumprimento de protocolos. Efetivo previsto 2025: 506.' },
+        { rank: 5, title: 'Chefe Principal', abbreviation: 'Ch. Ppal.', category: 'Carreira de Chefe',
+          description: 'Supervisão de múltiplos Chefes e equipas. Gestão de turno completo. Interface operacional entre Agentes e Oficiais. Efetivo previsto 2025: 683.' },
+        { rank: 6, title: 'Chefe Coordenador', abbreviation: 'Ch. Coord.', category: 'Carreira de Chefe',
+          description: 'Topo da Carreira de Chefe. Coordenação operacional de setor alargado. Assessoria técnica aos Oficiais. Experiência sólida em gestão de patrulhas e ocorrências complexas. Efetivo previsto 2025: 853.' },
+  
+        // CARREIRA DE OFICIAL (6 escalões)
+        { rank: 7, title: 'Subcomissário', abbreviation: 'Subcom.', category: 'Carreira de Oficial',
+          description: 'Primeiro posto de Oficial PSP. Formado no ISCPSI. Comanda secções, autoriza operações de média complexidade e assegura reporte hierárquico de ocorrências graves. Efetivo previsto 2025: 113.' },
+        { rank: 8, title: 'Comissário', abbreviation: 'Com.', category: 'Carreira de Oficial',
+          description: 'Comanda Esquadra ou Divisão Policial. Responsável pela estratégia operacional do setor, gestão de recursos humanos e materiais, e relação com outras entidades. Efetivo previsto 2025: 270.' },
+        { rank: 9, title: 'Subintendente', abbreviation: 'Subint.', category: 'Carreira de Oficial',
+          description: 'Oficial Superior. Coordena operações multi-divisão. Pode assumir comando de Divisão Policial de maior dimensão ou funções de Estado-Maior em Comandos Metropolitanos. Efetivo previsto 2025: 269.' },
+        { rank: 10, title: 'Intendente', abbreviation: 'Int.', category: 'Carreira de Oficial',
+          description: 'Gestão estratégica de Comando Distrital ou funções na Direção Nacional. Interface com entidades governamentais, autarquias e outras forças de segurança. Efetivo previsto 2025: 105.' },
+        { rank: 11, title: 'Superintendente', abbreviation: 'Sup.', category: 'Carreira de Oficial',
+          description: 'Comanda Comando Metropolitano ou Distrital de grande dimensão (Lisboa, Porto). Ou exerce funções de DNA (Diretor Nacional Adjunto). Toma decisões estratégicas de âmbito alargado. Efetivo previsto 2025: 74.' },
+        { rank: 12, title: 'Superintendente-Chefe', abbreviation: 'Sup.-Ch.', category: 'Carreira de Oficial',
+          description: 'Posto máximo da Carreira de Oficial. Gestão dos grandes departamentos nacionais ou Comandante de maior Unidade. O Diretor Nacional é tipicamente Superintendente-Chefe. Efetivo previsto 2025: 20.' },
+  
+        // DIREÇÃO NACIONAL
+        { rank: 13, title: 'Diretor Nacional Adjunto / Inspetor Nacional', abbreviation: 'DNA / IN', category: 'Direção Nacional',
+          description: 'Quatro Diretores Nacionais Adjuntos comandam as unidades orgânicas (UOOS, UOSACF, UORH, UOLF). O Inspetor Nacional dirige a Inspeção Nacional PSP. Reportam diretamente ao Diretor Nacional.' },
+        { rank: 14, title: 'Diretor Nacional', abbreviation: 'DN', category: 'Direção Nacional',
+          description: 'Máxima autoridade da PSP. Cargo único. Comanda toda a força policial a nível nacional. Responde ao Ministro da Administração Interna. Diretor Nacional atual (2024): Luís Miguel Ribeiro Carrilho, Superintendente-Chefe.' },
+      ],
+  
+      abordagens: [
+        {
+          title: 'Abordagem a Suspeito a Pé — Protocolo Padrão',
+          shortDesc: 'Procedimento de abordagem individual com identificação e controlo de risco.',
+          content: `A abordagem a suspeito a pé é das situações mais comuns e mais perigosas para um agente PSP.
+  
+  PRÉ-ABORDAGEM:
+  • Avaliar o ambiente: saídas, possíveis cúmplices, objetos na mão do suspeito
+  • Posicionar corretamente: nunca com as costas à entrada, manter distância mínima 2-3m
+  • Avisar ao rádio: "10-38 a pé, [localização], [descrição do suspeito]"
+  
+  ABORDAGEM (em par — formação padrão):
+  Agente 1 (principal): fala com o suspeito, solicita documentos, mantém posição lateral
+  Agente 2 (apoio): posição de ângulo oposto, cobre movimentos, observa ambiente
+  
+  COMUNICAÇÃO:
+  • "Boa tarde, PSP. Os seus documentos de identificação, por favor."
+  • Tom controlado, autoritário mas não agressivo
+  • Manter contato visual constante
+  
+  EM CASO DE RECUSA DE IDENTIFICAÇÃO:
+  • A recusa de identificação a OPC é crime de desobediência (art. 348 CP)
+  • Informar claramente: "É obrigado por lei a identificar-se. Recusa implica detenção para identificação."
+  • Registar a recusa e proceder a detenção para identificação se mantiver recusa
+  
+  EM CASO DE FUGA:
+  • Ordem de paragem verbal clara e audível: "PSP — PARE! POLÍCIA!"
+  • Comunicar ao rádio imediatamente: direção, descrição, hora
+  • Avaliação proporcional de perseguição a pé vs viatura
+  
+  EM ROLEPLAY: a qualidade da abordagem define a cena. Um agente que fala com autoridade e segurança cria RP muito mais rico do que um que age mecanicamente.`,
+          tags: ['Abordagem', 'Suspeito', 'Identificação', 'Protocolo'],
+        },
+        {
+          title: 'Negociação com Reféns — Crise e Sequestro',
+          shortDesc: 'Protocolo de resposta e negociação em situações de crise com reféns.',
+          content: `A PSP tem negociadores especializados formados em técnicas de gestão de crise (curso específico no ISCPSI/EPP).
+  
+  FASE 1 — CHEGADA E CONTENÇÃO:
+  • Estabelecer 2 perímetros: interno (imediato) e externo (afastamento de civis)
+  • Ninguém entra ou sai da zona interna sem autorização do Comandante de Operações
+  • Cortar comunicações externas do local se possível
+  • Solicitar imediatamente: negociador, CI/GOE (UEP), INEM standby
+  
+  FASE 2 — AVALIAÇÃO:
+  • Quantos reféns? Estado de saúde? Identidade?
+  • Quantos sequestradores? Armamento visível?
+  • Quais as exigências? (não tomar decisões sobre exigências sem negociador)
+  • Há elementos vulneráveis (crianças, doentes)?
+  
+  FASE 3 — NEGOCIAÇÃO (só o negociador fala):
+  Princípios fundamentais:
+  • Uma só voz — o negociador. Ninguém mais comunica com o sequestrador.
+  • Escuta ativa — deixar falar, validar emoções, não interromper
+  • Nunca prometer o que não se pode cumprir
+  • Tempo é aliado — quanto mais tempo, menor a tensão e mais hipóteses de saída pacífica
+  • Pequenas concessões criam reciprocidade
+  
+  FASE 4 — RESOLUÇÃO:
+  • Entrega voluntária: instruções claras de saída segura
+  • Intervenção tática (GOE): só quando todas as alternativas pacíficas estão esgotadas e há risco iminente
+  
+  APÓS A CRISE:
+  • Acompanhamento psicológico a reféns e negociadores
+  • Debriefing completo de todos os elementos
+  • RUAF se houve uso de força`,
+          tags: ['Reféns', 'Negociação', 'Crise', 'GOE', 'CI'],
+        },
+        {
+          title: 'Segurança em Grandes Eventos',
+          shortDesc: 'Policiamento de espetáculos desportivos e eventos de grande concentração.',
+          content: `A PSP tem competência específica em segurança a grandes eventos (Lei n.º 39/2009 — regime jurídico de combate à violência no desporto).
+  
+  PLANEAMENTO PRÉ-EVENTO:
+  • Reunião de coordenação com organização, clubes e CCCO
+  • Avaliação de risco: historial de incidentes, rivalidades entre adeptos, capacidade do recinto
+  • Definição de força policial necessária (Mapa de Pessoal de Policiamento)
+  • Posicionamento de unidades: acesso, interior, exterior, vias de fuga
+  
+  NO DIA DO EVENTO:
+  • Revista à entrada — armas, pirotecnia, álcool (lei proíbe)
+  • Separação de adeptos visitantes dos locais (setor específico)
+  • DIP (Departamento de Informações Policiais) — spotters a identificar instigadores
+  • Comunicações contínuas entre sectores via rádio
+  • Reserva tática disponível (CI se necessário)
+  
+  SITUAÇÕES COMUNS EM RP:
+  • Adeptos sem bilhete a tentar entrar → protocolo de não entrada + registo
+  • Briga nos acessos → contenção, separação, possível detenção
+  • Pirotecnia no interior → identificar responsável, expulsão + possível detenção
+  • Invasão do relvado → barreira física, contenção e devolução ordenada
+  
+  APÓS O EVENTO:
+  • Acompanhamento de saída organizada
+  • Relatório de policiamento (DIP recebe para análise de padrões)
+  • RUAF se houve uso de força`,
+          tags: ['Eventos', 'Desporto', 'DIP', 'Spotters', 'Lei 39/2009'],
+        },
+      ],
+  
+      situacoes: [
+        {
+          title: 'Violência Doméstica — Resposta em Flagrante',
+          shortDesc: 'Protocolo PSP para ocorrências de violência doméstica (programa específico).',
+          content: `A violência doméstica é crime público (art. 152 CP) — a PSP DEVE agir independentemente de queixa da vítima.
+  
+  CHEGADA AO LOCAL:
+  • Separar imediatamente agressor e vítima em divisões diferentes
+  • Avaliar estado de saúde da vítima — solicitar INEM se houver ferimentos
+  • Verificar se há menores no espaço e avaliar risco para crianças
+  
+  AVALIAÇÃO DE RISCO — Ficha RVD (Risco de Violência Doméstica):
+  Perguntas padronizadas sobre: frequência e gravidade das agressões, uso de armas, ameaças de morte, filhos em risco, álcool/drogas, histórico policial do agressor
+  
+  DECISÃO DE DETENÇÃO:
+  • Detenção obrigatória em flagrante delito (crime semipúblico não — é PÚBLICO)
+  • Detenção se houver perigo para a vítima mesmo sem flagrante (medidas de coação urgentes)
+  
+  APOIO À VÍTIMA:
+  • Informar sobre direitos, apoios disponíveis (APAV, casas de abrigo)
+  • Fotografar lesões com o consentimento da vítima (prova)
+  • Auto de notícia detalhado com todas as circunstâncias
+  • Encaminhar para Gabinete de Apoio à Vítima (GAV) da Esquadra
+  
+  FOLLOW-UP OBRIGATÓRIO:
+  • Contacto com vítima nas 72h seguintes
+  • Verificação de cumprimento de medidas de afastamento (se aplicadas)
+  • Coordenação com CPCJ (Comissão de Proteção de Crianças e Jovens) se há menores
+  
+  EM ROLEPLAY: este é um dos cenários mais exigentes emocionalmente. Requer equilíbrio entre profissionalismo policial e sensibilidade humana.`,
+          tags: ['Violência Doméstica', 'VD', 'GAV', 'APAV', 'Crime Público'],
+        },
+        {
+          title: 'Assalto a Banco com Reféns — Coordenação Total',
+          shortDesc: 'Resposta PSP a assalto bancário em curso — gestão de crise de alta complexidade.',
+          content: `ALERTA INICIAL (chamada 112 ou alarme silencioso do banco):
+  • Deslocar com 10-40 (sem sirene) se assalto em curso — não alertar assaltantes
+  • Comunicar ao CCCO: confirmação de informação, número de unidades a deslocar
+  
+  CHEGADA AO LOCAL:
+  • Perímetro externo imediato: afastar civis da zona de visibilidade
+  • Confirmar a situação (reféns? número de assaltantes? armamento?)
+  • Comunicar: "10-31, assalto bancário confirmado, reféns, solicitamos negociador e CI, [local]"
+  
+  ESTRUTURA DE COMANDO NO LOCAL:
+  • Comandante de Operações — Oficial mais graduado presente
+  • Negociador — único ponto de contacto com assaltantes
+  • Equipa tática (CI/GOE) — posicionamento silencioso, coberturas
+  • Equipa de apoio — controlo de perímetro, gestão de civis e media
+  
+  NEGOCIAÇÃO:
+  • Exigências comuns: viatura de fuga, helicóptero, dinheiro
+  • Nenhuma exigência é concedida sem avaliação do Comandante
+  • Estratégia: prolongar o tempo, reduzir tensão, isolar assaltantes do exterior
+  
+  INTERVENÇÃO TÁTICA (último recurso):
+  • GOE é a unidade especializada para resolução de situações de reféns
+  • Intervenção só autorizada pelo Comandante com avaliação de risco favorável
+  • Coordenação total com negociador antes de qualquer movimento
+  
+  APÓS RESOLUÇÃO:
+  • INEM para triagem de reféns
+  • Preservação de cena para PJ/investigação
+  • Separar e deter assaltantes imediatamente
+  • RUAF obrigatório
+  • Debriefing completo`,
+          tags: ['Banco', 'Reféns', 'GOE', 'Negociação', 'Comando'],
+        },
+        {
+          title: 'Perseguição Policial — Gestão e Segurança',
+          shortDesc: 'Protocolo de perseguição terrestre com avaliação contínua de risco.',
+          content: `A PSP realiza 21.500 operações de fiscalização rodoviária por ano. As perseguições emergem frequentemente dessas paragens.
+  
+  INÍCIO DA PERSEGUIÇÃO:
+  • Sinalética: luzes azuis + sirene OBRIGATÓRIAS (identifica claramente como policial)
+  • Comunicação imediata: "10-80, [matrícula], [descrição veículo], [localização], [direção], [velocidade estimada]"
+  • CCCO assume coordenação: informa outras unidades, prepara bloqueios
+  
+  DURANTE A PERSEGUIÇÃO:
+  • Atualizar localização e direção a cada 30 segundos
+  • Nunca ultrapassar o fugitivo em velocidade que ponha civis em risco
+  • Solicitar apoio para interceptação em pontos estratégicos
+  • Avaliar CONTINUAMENTE: vale o risco para os civis?
+  
+  TÉCNICAS DE INTERCEPTAÇÃO:
+  • Barreira estática: viaturas perpendiculares à via (nunca manter agentes junto às viaturas)
+  • Spike strip (pinos): instalar antecipadamente com coordenação de CCCO
+  • Apoio aéreo (se disponível): coordenação via CCCO
+  
+  QUANDO TERMINAR A PERSEGUIÇÃO (decisão do Comandante):
+  • Quando o risco para terceiros supera o benefício de capturar o suspeito
+  • Quando se perde o rasto do veículo
+  • Comunicar último avistamento e características ao CCCO — outras unidades assumem
+  
+  APÓS PARAGEM:
+  • Abordagem tática a veículo (ver procedimento)
+  • Se condutor apresenta sinais de lesão: INEM
+  • Documentar detalhadamente para relatório — perseguições são objeto de supervisão
+  
+  EM ROLEPLAY: a perseguição não é eterna nem ilimitada. Um agente que persegue a 200km/h pela cidade ignorando o risco para civis está a fazer Fail RP e GTA Driving.`,
+          tags: ['Perseguição', '10-80', 'CCCO', 'Spike', 'Bloqueio'],
+        },
+      ],
+    },
   {
     id: 'gnr',
     name: 'Guarda Nacional Republicana',
