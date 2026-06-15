@@ -680,8 +680,8 @@ export const corporacoes: CorpData[] = [
   
   EM ROLEPLAY: a perseguição não é eterna nem ilimitada. Um agente que persegue a 200km/h pela cidade ignorando o risco para civis está a fazer Fail RP e GTA Driving.`,
           tags: ['Perseguição', '10-80', 'CCCO', 'Spike', 'Bloqueio'],
-        ],
-      },
+        },
+      ],
     },
   {
     id: 'gnr',
