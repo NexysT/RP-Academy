@@ -1,192 +1,58 @@
-<div align="center">
+# RP Academy
 
-# 🎭 RP ACADEMY
-<br>
+Plataforma web que estou a desenvolver para organizar conteúdos de formação, questões e exercícios dirigidos a comunidades de roleplay.
 
-<div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Inter&size=22&pause=1200&color=5DA3FA&center=true&vCenter=true&width=700&lines=Plataforma+Educacional+para+Servidores+RP;Sistema+de+Formacao+de+Staff;Quiz+Interativo+de+Roleplay;Corporacoes+e+Procedimentos+RP;Next.js+%7C+TypeScript+%7C+TailwindCSS" />
+**Demonstração:** https://rp-academy.vercel.app/
 
-  <br/>
-  <br>
-  <br>
+## Objetivo
 
-  [![Deploy](https://img.shields.io/badge/🌐%20Ver%20Site-rp--academy.vercel.app-5DA3FA?style=for-the-badge&logoColor=white)](https://rp-academy.vercel.app)
+Quero reunir materiais de aprendizagem e avaliação numa interface fácil de percorrer. O projeto começou pela formação em regras de roleplay e pela estruturação de conteúdos para staff e diferentes corporações.
 
-</div>
+## Tecnologias
 
-<br><br>
+`Next.js 16` · `React 19` · `TypeScript` · `Tailwind CSS` · `Framer Motion`
 
-![Next JS](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
-![Framer Motion](https://img.shields.io/badge/Framer_Motion-black?style=for-the-badge&logo=framer&logoColor=blue)
-![Roleplay](https://img.shields.io/badge/Roleplay-Learning-purple?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-In_Development-success?style=for-the-badge)
+## Executar localmente
 
-</div>
-
----
-
-# 🎯 Objetivo do Projeto
-
-O **RP Academy** é uma plataforma desenvolvida para auxiliar comunidades e servidores de **Roleplay** através de um sistema moderno de aprendizagem, formação e avaliação.
-
-O projeto procura elevar a qualidade do RP através de:
-- Ensino estruturado de regras RP
-- Formação de corporações
-- Simulações e avaliações
-- Testes para staff
-- Experiência moderna e profissional
-
-O foco principal é criar uma plataforma que pareça um produto comercial real e não apenas um website básico de quizzes.
-
----
-
-# 🧠 Funcionalidades Principais
-
-## 📚 Sistema Roleplay
-✔ Explicação completa de regras RP  
-✔ Sidebar lateral interativa  
-✔ Sistema estilo W3Schools  
-✔ Feedback imediato de respostas  
-✔ Barra de progresso  
-✔ Questões dinâmicas  
-
----
-
-## 🛡 Sistema STAFF
-
-### Teste
-✔ Correção instantânea  
-✔ Explicações após resposta  
-✔ Questões aleatórias  
-✔ Sistema interativo  
-
-### Exame
-✔ Resultado apenas no final  
-✔ Questões avançadas  
-✔ Sistema de pontuação  
-✔ Mistura RP + STAFF  
-
----
-
-## 🚓 Corporações
-- Polícia
-- INEM
-- Militar
-- Polícia Militar
-- GNR
-- PSP
-- Estrangeiro
-
-Cada secção contém:
-- Hierarquias
-- Procedimentos
-- Guias RP
-- Situações práticas
-- Códigos rádio
-
----
-
-# 🎨 Filosofia de Design
-
-O website deve transmitir:
-- Profissionalismo
-- Modernidade
-- Clareza
-- Fluidez
-- Performance
-
-### Inspirações Visuais
-- Linear
-- Vercel
-- Stripe
-- Notion
-- Framer
-
-### Objetivos UX/UI
-✔ Dark Mode premium  
-✔ Micro animações suaves  
-✔ Layout responsivo  
-✔ Navegação fluida  
-✔ Glassmorphism subtil  
-✔ Componentização moderna  
-
----
-
-# ⚙ Stack Tecnológica
+Precisas de uma versão de Node.js compatível com o Next.js 16 e de npm.
 
 ```bash
-- Next.js
-- TypeScript
-- TailwindCSS
-- Framer Motion
-- Local Storage
-- Modular Architecture
+git clone https://github.com/NexysT/RP-Academy.git
+cd RP-Academy
+npm ci
+npm run dev
 ```
 
----
-
-# 🗂 Estrutura do Projeto
+Abre `http://localhost:3000`.
 
 ```bash
-src/
-├── app/
-│   ├── corporacoes/
-│   ├── roleplay/
-│   ├── staff/
-│   └── dashboard/
-│
-├── components/
-│   ├── ui/
-│   ├── quiz/
-│   ├── sidebar/
-│   └── animations/
-│
-├── data/
-├── hooks/
-├── lib/
-├── services/
-├── styles/
-└── utils/
+npm run lint
+npm run build
 ```
 
----
+Estes comandos estão definidos no `package.json`; a execução local permite verificar o estado do código na tua máquina.
 
-# 🚀 Objetivos Técnicos
+## Estrutura do projeto
 
-✔ Código limpo e organizado  
-✔ Arquitetura escalável  
-✔ Componentes reutilizáveis  
-✔ Alta performance  
-✔ SEO otimizado  
-✔ UX moderna  
-✔ Responsividade total  
+| Pasta | Conteúdo |
+| :--- | :--- |
+| `app/` | Rotas e páginas Next.js. |
+| `components/` | Componentes de interface. |
+| `data/` | Conteúdo e estruturas de dados. |
+| `hooks/` | Lógica reutilizável de React. |
+| `lib/` | Funções auxiliares. |
+| `types/` | Tipos TypeScript. |
+| `public/` | Recursos estáticos. |
 
----
+## Estado do desenvolvimento
 
-# 📈 Roadmap
+O repositório contém uma implementação em evolução. As funcionalidades apresentadas na demonstração podem mudar; autenticação, API para servidores e gestão administrativa completa não devem ser assumidas como disponíveis sem confirmação no código.
 
-- [ ] Sistema completo de quizzes
-- [ ] Dashboard de progresso
-- [ ] Sistema de níveis
-- [ ] Estatísticas avançadas
-- [ ] Guardar progresso local
-- [ ] Sistema de autenticação
-- [ ] Painel administrativo
-- [ ] API para servidores RP
+## Próximas etapas
 
----
+- Consolidar os conteúdos de formação e os exercícios.
+- Rever a navegação em telemóvel e por teclado.
+- Adicionar testes e documentação dos módulos principais.
+- Definir a arquitetura de autenticação e gestão de utilizadores antes de a lançar.
 
-# 🤖 Nota
-
-Algumas partes do projeto foram desenvolvidas com apoio de inteligência artificial para acelerar prototipagem, organização e produtividade.
-
----
-
-# 🚧 Estado do Projeto
-
-Atualmente em desenvolvimento ativo.
-```
-Nexys.Tuga || A reutilização é permitida, mas agradece-se que criadores e developers mantenham os devidos créditos, contribuindo para uma comunidade mais justa e colaborativa. || 2026
-```
+Se detetares um problema reproduzível, abre uma issue com os passos e a página onde ocorreu.
